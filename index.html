@@ -37,8 +37,8 @@
               >
             </li>
             <li>
-              <a href="#about" id="about-link"
-                ><span class="icon solid fa-user">Frontend Skills</span></a
+              <a href="#skills" id="skills-link"
+                ><span class="icon solid fa-user">Frontend skills</span></a
               >
             </li>
             <li>
@@ -230,9 +230,9 @@
         </div>
       </section>
 
-      <!-- Skills -->
+      <!-- skills -->
       
-      <div class="skills" id="about">
+      <div class="skills" id="skills">
         <h1>Frontend Skills</h1>
         <div class="skillsdiv">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png" alt="">
@@ -261,11 +261,11 @@
           </header>
 
           <p>
-            Let's connect! Would love to hear about your project ideas or
+            Let's connect! Would love to hear skills your project ideas or
             thoughts what we might build together!
           </p>
 
-          <form method="post" action="#">
+          <form method="post" action="submit">
             <div class="row">
               <div class="col-6 col-12-mobile">
                 <input type="text" name="name" placeholder="Name" />
@@ -303,8 +303,63 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <?php
-    include("registrar.php")
-    ?>
+    
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"></script>
+
+    <script type="module">
+      // Importa las funciones que necesitas de los SDK que necesitas
+      import { initializeApp } from "firebase/app";
+      import { getFirestore, collection, addDoc } from "firebase/firestore";
+      import { getAnalytics } from "firebase/analytics";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+      import { getFirestore, doc, getDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+    
+      // Tu web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyD3Q-lfogx38ArECVHcTFmnn1UAEI7SkIw",
+        authDomain: "form-8fc5a.firebaseapp.com",
+        projectId: "form-8fc5a",
+        storageBucket: "form-8fc5a.appspot.com",
+        messagingSenderId: "314958638040",
+        appId: "1:314958638040:web:4278994755966c6e0da0ad",
+        measurementId: "G-9868HPEGDW"
+      };
+    
+      // Inicializa Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    
+      const db = getFirestore(app);
+    
+      document.querySelector("form").addEventListener("submit", async function (event) {
+        event.preventDefault(); // Evita el envío normal del formulario
+        console.log("Form submitted!");
+    
+        // Obtén los valores del formulario
+        const name = document.querySelector('input[name="name"]').value;
+        const email = document.querySelector('input[name="email"]').value;
+        const message = document.querySelector('textarea[name="message"]').value;
+    
+        try {
+          // Añade los datos a la colección "contacts" en Firestore
+          await addDoc(collection(db, "contacts"), {
+            name,
+            email,
+            message,
+          });
+    
+          console.log("Document written successfully!");
+    
+          // Puedes realizar acciones adicionales después de enviar los datos
+    
+        } catch (e) {
+          console.error("Error adding document: ", e);
+        }
+      });
+    </script>
+    
+   
+
+      
   </body>
 </html>
