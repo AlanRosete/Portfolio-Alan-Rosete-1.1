@@ -304,7 +304,7 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     
- 
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <script type="module">
 
@@ -351,6 +351,13 @@
           });
     
           console.log("Validate Correct!");
+
+          Toastify({
+            text: "¡La información se envió correctamente!",
+            duration: 3000, // Duración del mensaje en milisegundos
+            gravity: "bottom", // Posición del mensaje (puede ser "top", "bottom", "center")
+            backgroundColor: "green", // Color de fondo del mensaje
+          }).showToast();
 
           // Reinicia el formulario después de enviar los datos
         document.querySelector("form").reset();
