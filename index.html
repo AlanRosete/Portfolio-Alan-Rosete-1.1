@@ -304,7 +304,6 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
     <script type="module">
 
@@ -333,6 +332,7 @@
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
   const analytics = getAnalytics(app);  
+  const Toastify = ToastifyJS.default;
 
       document.querySelector("form").addEventListener("submit", async function (event) {
         event.preventDefault(); 
@@ -351,13 +351,17 @@
           });
     
           console.log("Validate Correct!");
+        
+        const toast = Toastify({
+        text: "¡La información se envió correctamente!",
+        duration: 3000, // Duración en milisegundos
+        gravity: "bottom", // Posición del toast
+        position: "center", // Alineación del texto
+        backgroundColor: "blue", // Color de fondo
+});
 
-          Toastify({
-            text: "¡La información se envió correctamente!",
-            duration: 3000, // Duración del mensaje en milisegundos
-            gravity: "bottom", // Posición del mensaje (puede ser "top", "bottom", "center")
-            backgroundColor: "green", // Color de fondo del mensaje
-          }).showToast();
+toast.showToast();
+
 
           // Reinicia el formulario después de enviar los datos
         document.querySelector("form").reset();
@@ -371,6 +375,7 @@
     </script>
     
    
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
       
   </body>
