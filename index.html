@@ -134,6 +134,7 @@
                 <header>
                   <h3>"Speed Typer Game"</h3>
                 </header>
+                <h9> </h9>
               </article>
               <article class="item">
                 <a
@@ -145,6 +146,7 @@
                 <header>
                   <h3>"Form Basic SaSS"</h3>
                 </header>
+                <h9> </h9>
               </article>
               <article class="item">
                 <a
@@ -156,7 +158,7 @@
                 <header>
                   <h3>"List Of People"</h3>
                 </header>
-
+                <h9> </h9>
               </article>
             </div>
             <div class="col-4 col-12-mobile">
@@ -170,7 +172,7 @@
                 <header>
                   <h3>"Calendar Javascript"</h3>
                 </header>
-
+                <h9> </h9>
               </article>
               <article class="item">
                 <a
@@ -182,6 +184,7 @@
                 <header>
                   <h3>"To-Do React And Tailwind"</h3>
                 </header>
+                <h9> </h9>
               </article>
             </div>
             <div class="col-4 col-12-mobile">
@@ -300,71 +303,61 @@
     <script src="assets/js/main.js"></script>
     
     <script type="module">
-      import { sendFormData } from './assets/js/firebase-config.js';
+      import { sendFormData } from '/assets/js/firebase-config.js';
     
       document.querySelector("form").addEventListener("submit", async function (event) {
         event.preventDefault();
         console.log("Form Submited!");
     
         const name = document.querySelector('input[name="name"]').value;
-        const email = document.querySelector('input[name="email"]').value;
-        const message = document.querySelector('textarea[name="message"]').value;
+  const email = document.querySelector('input[name="email"]').value;
+  const message = document.querySelector('textarea[name="message"]').value;
 
-    // Validate data empty
-    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
-      // Show message error!
-      Toastify({
-        text: "Por favor, completa todos los campos antes de enviar el mensaje.",
-        duration: 3000,
-        gravity: "top",
-        position: "center",
-        backgroundColor: "#FFD700",
-        stopOnFocus: true,
-      }).showToast();
+  // Validar si los campos están vacíos
+  if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+    // Mostrar el toast de advertencia
+    Toastify({
+      text: "Por favor, completa todos los campos antes de enviar el mensaje.",
+      duration: 3000,
+      gravity: "top",
+      position: "center",
+      backgroundColor: "#FFD700",
+      stopOnFocus: true,
+    }).showToast();
 
-      return;
-    }
+    return;
+  }
 
-    try {
-      // Send data if is correct
-      await addDoc(collection(db, "contacts"), {
-        name,
-        email,
-        message,
-      });
+  const isSuccess = await sendFormData(name, email, message);
 
-      console.log("Validate Correct!");
-
-      // Reset Camps
-      document.querySelector("form").reset();
-
-      // Success
-      Toastify({
-        text: "Message sent successfully!",
-        duration: 3000,
-        gravity: "top",
-        position: "center",
-        backgroundColor: "#4CAF50",
-        stopOnFocus: true,
-      }).showToast();
-    } catch (e) {
-      console.error("Error: ", e);
-
-      // Bug (mistake)
-      Toastify({
-        text: "Error sending message!",
-        duration: 3000,
-        gravity: "top",
-        position: "center",
-        backgroundColor: "#FF0000",
-        stopOnFocus: true,
-      }).showToast();
-    }
-  });        
-
+  if (isSuccess) {
+    console.log("Formulario enviado con éxito!");
+    // Restablecer el formulario después de enviar los datos
+    document.querySelector("form").reset();
+    // Mostrar el toast de éxito
+    Toastify({
+      text: "¡Mensaje enviado con éxito!",
+      duration: 3000,
+      gravity: "top",
+      position: "center",
+      backgroundColor: "#4CAF50",
+      stopOnFocus: true,
+    }).showToast();
+  } else {
+    // Mostrar el toast de error
+    Toastify({
+      text: "Error al enviar el mensaje!",
+      duration: 3000,
+      gravity: "top",
+      position: "center",
+      backgroundColor: "#FF0000",
+      stopOnFocus: true,
+    }).showToast();
+  }
+});
     </script>
     
-<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
       
   </body>
