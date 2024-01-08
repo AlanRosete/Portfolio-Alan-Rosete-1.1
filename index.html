@@ -9,6 +9,7 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
   </head>
   <body class="is-preload">
     <!-- Header -->
@@ -133,7 +134,6 @@
                 <header>
                   <h3>"Speed Typer Game"</h3>
                 </header>
-                <h9> </h9>
               </article>
               <article class="item">
                 <a
@@ -145,7 +145,6 @@
                 <header>
                   <h3>"Form Basic SaSS"</h3>
                 </header>
-                <h9> </h9>
               </article>
               <article class="item">
                 <a
@@ -157,7 +156,7 @@
                 <header>
                   <h3>"List Of People"</h3>
                 </header>
-                <h9> </h9>
+
               </article>
             </div>
             <div class="col-4 col-12-mobile">
@@ -171,19 +170,18 @@
                 <header>
                   <h3>"Calendar Javascript"</h3>
                 </header>
-                <h9> </h9>
+
               </article>
               <article class="item">
                 <a
-                  href="https://kefi-quotable.now.sh/"
+                  href="https://toddo-react-app-v1.netlify.app/"
                   class="image fit"
                   target="_blank"
-                  ><img src="images/quote.png" alt=""
+                  ><img src="images/Captura6.PNG" alt=""
                 /></a>
                 <header>
-                  <h3>"Random Quote Generator"</h3>
+                  <h3>"To-Do React And Tailwind"</h3>
                 </header>
-                <h9> </h9>
               </article>
             </div>
             <div class="col-4 col-12-mobile">
@@ -197,7 +195,6 @@
                 <header>
                   <h3>"GitHub User Search"</h3>
                 </header>
-                <h9>  </h9>
               </article>
               <article class="item">
                 <a
@@ -209,7 +206,6 @@
                 <header>
                   <h3>"Music Player"</h3>
                 </header>
-                <h9>  </h9>
               </article>
               <article class="item">
                 <a
@@ -223,7 +219,6 @@
                 <header>
                   <h3>"Digital Clock"</h3>
                 </header>
-                <h9>  </h9>
               </article>
             </div>
           </div>
@@ -304,66 +299,72 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     
- 
-
     <script type="module">
-
+      import { sendFormData } from './assets/js/firebase-config.js';
     
-  // Import the functions you need from the SDKs you need
-    import { getFirestore,addDoc,collection } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js'
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyD3Q-lfogx38ArECVHcTFmnn1UAEI7SkIw",
-    authDomain: "form-8fc5a.firebaseapp.com",
-    databaseURL: "https://form-8fc5a-default-rtdb.firebaseio.com",
-    projectId: "form-8fc5a",
-    storageBucket: "form-8fc5a.appspot.com",
-    messagingSenderId: "314958638040",
-    appId: "1:314958638040:web:4278994755966c6e0da0ad",
-    measurementId: "G-9868HPEGDW"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-  const analytics = getAnalytics(app);  
-
       document.querySelector("form").addEventListener("submit", async function (event) {
-        event.preventDefault(); 
+        event.preventDefault();
         console.log("Form Submited!");
     
         const name = document.querySelector('input[name="name"]').value;
         const email = document.querySelector('input[name="email"]').value;
         const message = document.querySelector('textarea[name="message"]').value;
-    
-        try {
 
-          await addDoc(collection(db, "contacts"), {
-            name,
-            email,
-            message,
-          });
-    
-          console.log("Validate Correct!");
+    // Validate data empty
+    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+      // Show message error!
+      Toastify({
+        text: "Por favor, completa todos los campos antes de enviar el mensaje.",
+        duration: 3000,
+        gravity: "top",
+        position: "center",
+        backgroundColor: "#FFD700",
+        stopOnFocus: true,
+      }).showToast();
 
-        // Reinicia el formulario después de enviar los datos
-        document.querySelector("form").reset();
-    
-          // E para el error
-    
-        } catch (e) {
-          console.error("Error: ", e);
-        }
+      return;
+    }
+
+    try {
+      // Send data if is correct
+      await addDoc(collection(db, "contacts"), {
+        name,
+        email,
+        message,
       });
+
+      console.log("Validate Correct!");
+
+      // Reset Camps
+      document.querySelector("form").reset();
+
+      // Success
+      Toastify({
+        text: "Message sent successfully!",
+        duration: 3000,
+        gravity: "top",
+        position: "center",
+        backgroundColor: "#4CAF50",
+        stopOnFocus: true,
+      }).showToast();
+    } catch (e) {
+      console.error("Error: ", e);
+
+      // Bug (mistake)
+      Toastify({
+        text: "Error sending message!",
+        duration: 3000,
+        gravity: "top",
+        position: "center",
+        backgroundColor: "#FF0000",
+        stopOnFocus: true,
+      }).showToast();
+    }
+  });        
+
     </script>
     
-   
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
       
   </body>
