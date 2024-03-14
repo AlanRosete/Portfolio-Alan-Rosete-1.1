@@ -25,7 +25,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const analytics = getAnalytics(app);
 
-// Función para enviar el formulario a Firestore
+// Function Send Data 
 export async function sendFormData(name, email, message) {
   try {
     await addDoc(collection(db, "contacts"), {
@@ -33,9 +33,9 @@ export async function sendFormData(name, email, message) {
       email,
       message,
     });
-    return true; // Éxito
+    return true; // Good 
   } catch (error) {
     console.error("Error: ", error);
-    return false; // Error
+    return false; // Internal Error
   }
 }

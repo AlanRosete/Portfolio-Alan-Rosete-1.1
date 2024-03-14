@@ -56,7 +56,7 @@
         <ul class="icons">
           <li>
             <a
-              href="https://wa.me/527775509739"
+              href="https://wa.me/527774928441"
               class="icon brands fa-whatsapp"
               target="_blank"
               ><span class="label">Whatsapp</span></a
@@ -190,13 +190,13 @@
             <div class="col-4 col-12-mobile">
               <article class="item">
                 <a
-                  href="https://github.com/AlanRosete/GitHub-Browse"
+                  href="https://geo-weatherv1.netlify.app"
                   class="image fit"
                   target="_blank"
-                  ><img src="images/6.png" alt=""
+                  ><img src="/images/Captura7.png" alt=""
                 /></a>
                 <header>
-                  <h3>"GitHub User Search"</h3>
+                  <h3>"GeoWeather"</h3>
                 </header>
               </article>
               <article class="item">
@@ -307,23 +307,23 @@
     
       document.querySelector("form").addEventListener("submit", async function (event) {
         event.preventDefault();
-        console.log("Form Submited!");
+        //console.log("Form Submited!");
     
         const name = document.querySelector('input[name="name"]').value;
-  const email = document.querySelector('input[name="email"]').value;
-  const message = document.querySelector('textarea[name="message"]').value;
+        const email = document.querySelector('input[name="email"]').value;
+        const message = document.querySelector('textarea[name="message"]').value;
 
-  // Validar si los campos están vacíos
-  if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
-    // Mostrar el toast de advertencia
-    Toastify({
-      text: "Por favor, completa todos los campos antes de enviar el mensaje.",
-      duration: 3000,
-      gravity: "top",
-      position: "center",
-      backgroundColor: "#FFD700",
-      stopOnFocus: true,
-    }).showToast();
+        //Validate Nulls (Spring Operator)
+        if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+          // Show Toast
+          Toastify({
+            text: "Por favor, completa todos los campos antes de enviar el mensaje.",
+            duration: 3000,
+            gravity: "top",
+            position: "center",
+            backgroundColor: "#FFD700",
+            stopOnFocus: true,
+          }).showToast();
 
     return;
   }
@@ -332,9 +332,8 @@
 
   if (isSuccess) {
     console.log("Formulario enviado con éxito!");
-    // Restablecer el formulario después de enviar los datos
     document.querySelector("form").reset();
-    // Mostrar el toast de éxito
+    
     Toastify({
       text: "¡Mensaje enviado con éxito!",
       duration: 3000,
@@ -344,7 +343,7 @@
       stopOnFocus: true,
     }).showToast();
   } else {
-    // Mostrar el toast de error
+    //Error Message
     Toastify({
       text: "Error al enviar el mensaje!",
       duration: 3000,
