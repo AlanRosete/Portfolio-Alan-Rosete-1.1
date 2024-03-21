@@ -4,19 +4,19 @@ import { getFirestore, addDoc, collection } from 'https://www.gstatic.com/fireba
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
 
 const firebaseConfig = {
+  apiKey: "AIzaSyBQnUVDTRkPUfQtJh6eNXbTv6bk7-csJes",
 
-  apiKey: "AIzaSyAtHM0KnBDm2IOTi3wBQSOxb9IdGiISvN8",
+  authDomain: "form-portfolio-ec8f0.firebaseapp.com",
 
-  authDomain: "form-portfolio-3692e.firebaseapp.com",
+  projectId: "form-portfolio-ec8f0",
 
-  projectId: "form-portfolio-3692e",
+  storageBucket: "form-portfolio-ec8f0.appspot.com",
 
-  storageBucket: "form-portfolio-3692e.appspot.com",
+  messagingSenderId: "100926940687",
 
-  messagingSenderId: "784136490108",
-
-  appId: "1:784136490108:web:2b6e48f750e2283ddf4df9"
-
+  appId: "1:100926940687:web:36c35175d9879bd4e5657a",
+  
+  measurementId: "G-VKDQQWYBJ9"
 };
 
 
