@@ -5,19 +5,24 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyAtHM0KnBDm2IOTi3wBQSOxb9IdGiISvN8",
+  apiKey: "AIzaSyAuN5pyXzoS92u-uWaC3ZaDgY1zX1oH4Us",
 
-  authDomain: "form-portfolio-3692e.firebaseapp.com",
+  authDomain: "form-port-55c86.firebaseapp.com",
 
-  projectId: "form-portfolio-3692e",
+  databaseURL: "https://form-port-55c86-default-rtdb.firebaseio.com",
 
-  storageBucket: "form-portfolio-3692e.appspot.com",
+  projectId: "form-port-55c86",
 
-  messagingSenderId: "784136490108",
+  storageBucket: "form-port-55c86.appspot.com",
 
-  appId: "1:784136490108:web:2b6e48f750e2283ddf4df9"
+  messagingSenderId: "766003034055",
+
+  appId: "1:766003034055:web:9b43fd52a9c808f82f8be2",
+
+  measurementId: "G-T6R1S6W60R"
 
 };
+
 
 
 
