@@ -1,7 +1,8 @@
 // firebase-config.js
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import { getFirestore, addDoc, collection } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, addDoc, collection } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyBKT6yEKArmmxaVuLo2jUGOT6-Gn5VJzoA",
@@ -18,7 +19,6 @@ const firebaseConfig = {
   
   measurementId: "G-6B6Y4QWMXX"
 };
-
 
 
 const app = initializeApp(firebaseConfig);
