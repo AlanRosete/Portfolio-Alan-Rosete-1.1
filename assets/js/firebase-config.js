@@ -5,22 +5,14 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebas
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBKT6yEKArmmxaVuLo2jUGOT6-Gn5VJzoA",
-
-  authDomain: "testing-form-3ed5a.firebaseapp.com",
-
-  projectId: "testing-form-3ed5a",
-
-  storageBucket: "testing-form-3ed5a.appspot.com",
-
-  messagingSenderId: "143993195071",
-
-  appId: "1:143993195071:web:2251df6828bdf65b9ec68a",
-  
-  measurementId: "G-6B6Y4QWMXX"
+  apiKey: "AIzaSyAoPVPPHnoKyJfrTTY1S9IWdV3cRr-MEOA",
+  authDomain: "form-portafolio-8c80a.firebaseapp.com",
+  projectId: "form-portafolio-8c80a",
+  storageBucket: "form-portafolio-8c80a.appspot.com",
+  messagingSenderId: "883227823817",
+  appId: "1:883227823817:web:708441ce872883257f0718",
+  measurementId: "G-HLKKJYP2BG"
 };
-
-
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const analytics = getAnalytics(app);
