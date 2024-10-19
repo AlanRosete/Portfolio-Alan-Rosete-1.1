@@ -5,13 +5,13 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebas
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAoPVPPHnoKyJfrTTY1S9IWdV3cRr-MEOA",
-  authDomain: "form-portafolio-8c80a.firebaseapp.com",
-  projectId: "form-portafolio-8c80a",
-  storageBucket: "form-portafolio-8c80a.appspot.com",
-  messagingSenderId: "883227823817",
-  appId: "1:883227823817:web:708441ce872883257f0718",
-  measurementId: "G-HLKKJYP2BG"
+  apiKey: "AIzaSyBYZbpJ0DNi9vzWfifECduUmdfhfoAhMZ4",
+  authDomain: "form-main-portfolio.firebaseapp.com",
+  projectId: "form-main-portfolio",
+  storageBucket: "form-main-portfolio.appspot.com",
+  messagingSenderId: "908324247776",
+  appId: "1:908324247776:web:6544040ed668d602a81885",
+  measurementId: "G-SQB9XBFPPS"
 };
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
