@@ -23,9 +23,9 @@ export const firebaseConfig = {
 
 console.log("Firebase config loaded:", firebaseConfig);
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const analytics = getAnalytics(app);
+const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+const analytics = firebase.analytics();
 
 export async function sendFormData(name, email, message) {
   try {
