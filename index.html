@@ -326,6 +326,15 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <!-- Firebase App (core SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+
+    <!-- Firebase Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+    <!-- Firebase Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
+
     <script>
       window.env = {
         API_KEY: "{{PUBLIC_API_KEY}}",
@@ -337,7 +346,6 @@
         MEASUREMENT_ID: "{{PUBLIC_MEASUREMENT_ID}}"
       };
     </script>
-
     
     <script type="module">
       import { sendFormData } from '/assets/js/firebase-config.js';
