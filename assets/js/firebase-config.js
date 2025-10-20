@@ -4,13 +4,13 @@ import { getAnalytics } from 'firebase/analytics';
 // import 'dotenv/config';
 
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEASUREMENT_ID,
+  apiKey: process.env.API_KEY || window?.env?.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN || window?.env?.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID || window?.env?.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET || window?.env?.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID || window?.env?.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID || window?.env?.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID || window?.env?.MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
