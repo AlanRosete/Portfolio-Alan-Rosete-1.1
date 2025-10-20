@@ -29,7 +29,7 @@ const analytics = firebase.analytics();
 
 export async function sendFormData(name, email, message) {
   try {
-    await addDoc(collection(db, "contacts"), {
+    await db.collection("contacts").add({
       name,
       email,
       message,
