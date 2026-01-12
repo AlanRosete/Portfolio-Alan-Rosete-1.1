@@ -1,7 +1,3 @@
-// import { initializeApp } from 'firebase/app';
-// import { getFirestore, addDoc, collection } from 'firebase/firestore';
-// import { getAnalytics } from 'firebase/analytics';
-// import 'dotenv/config';
 
 const getEnvVar = (key) => {
   return (
