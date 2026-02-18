@@ -1,20 +1,13 @@
-
-const getEnvVar = (key) => {
-  return (
-    (typeof process !== "undefined" && process.env && process.env[key]) ||
-    (typeof window !== "undefined" && window.env && window.env[key]) ||
-    null
-  );
-};
+const env = (typeof window !== "undefined" && window.env) || {};
 
 export const firebaseConfig = {
-  apiKey: getEnvVar("API_KEY"),
-  authDomain: getEnvVar("AUTH_DOMAIN"),
-  projectId: getEnvVar("PROJECT_ID"),
-  storageBucket: getEnvVar("STORAGE_BUCKET"),
-  messagingSenderId: getEnvVar("MESSAGING_SENDER_ID"),
-  appId: getEnvVar("APP_ID"),
-  measurementId: getEnvVar("MEASUREMENT_ID"),
+  apiKey: process.env.API_KEY || env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN || env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID || env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET || env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID || env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID || env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID || env.MEASUREMENT_ID,
 };
 
 console.log("Firebase config loaded:", firebaseConfig);
