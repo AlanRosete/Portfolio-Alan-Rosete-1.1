@@ -1,4 +1,4 @@
-15618
+15624
 126C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@swc\helpers\cjs\_check_private_redeclaration.cjs134054099170136876 0
 128C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\firebase\functions\dist\compat\analytics\index.d.ts134054103234656994 0
 116C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\firebase\messaging\sw\dist\auth\cordova134054103245455556 1
@@ -34,7 +34,7 @@
 74C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\.gitignore134160409416349548 0
 152C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\firestore\dist\lite\firestore\test\unit\local\simple_db.test.d.ts134054103177403945 0
 126C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\messaging\dist\esm\src\util\errors.d.ts134054103133442739 0
-68C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist134160409601934230 1
+68C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist134160414852725736 1
 118C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\node\test\helpers\api134054103167463087 1
 162C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\firestore\dist\lite\firestore\test\integration\util\events_accumulator.d.ts134054103158043734 0
 96C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@grpc\grpc-js\proto134054103145218913 1
@@ -96,11 +96,11 @@
 113C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\caniuse-lite\data\features\mathml.js134054099208460970 0
 96C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\sha.js\test\test.js134054105280050787 0
 139C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\firebase\messaging\sw\dist\esm\compat\installations\index.d.ts134054103246689389 0
-79C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\generate-env.js134160409005121479 0
+79C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\generate-env.js134160410836272345 0
 122C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\src\core\user\reload.d.ts134054103203490083 0
 94C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\process\.eslintrc134054105176898930 0
 114C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\firebase\analytics\dist\index.mjs.map134054103157627441 0
-74C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\index.html134160409395988024 0
+74C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\index.html134160414604457936 0
 86C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\call-bind134054105279238269 1
 114C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\firebase\app-check\dist\installations134054103177454109 1
 150C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\firestore\dist\firestore\src\platform\node\grpc_connection.d.ts134054103160526461 0
@@ -2056,6 +2056,7 @@
 117C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\firebase\app-check\dist\esm\data-connect134054103176721819 1
 128C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\caniuse-lite\data\features\link-rel-dns-prefetch.js134054099207899219 0
 93C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\semver\README.md134054099181958641 0
+90C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Captura3.3a376e3c.png134160414850155766 0
 112C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@swc\helpers\_\_to_consumable_array134054099201509452 1
 116C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\web-vitals\dist\modules\deprecated.d.ts134054103136210851 0
 89C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\long\LICENSE134054103115677541 0
@@ -5765,7 +5766,7 @@
 108C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@swc\helpers\_\_to_property_key134054099201639759 1
 134C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\firebase\performance\dist\esm\compat\analytics\index.d.ts134054103249397810 0
 123C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\firebase\performance\dist\esm\compat\firestore134054103249553290 1
-89C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\assets\js\firebase-env.js134160409593094238 0
+89C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\assets\js\firebase-env.js134160414833245787 0
 128C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\firebase\performance\dist\esm\compat\index.cdn.d.ts134054103166153961 0
 124C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\firebase\performance\dist\esm\compat\index.d.ts134054103249608494 0
 110C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\firebase\compat\dist\esm\database134054103205802243 1
@@ -14329,6 +14330,7 @@
 122C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\data-connect\dist\src\api.node.d.ts134054103129570700 0
 113C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\data-connect\dist\src\core134054103137745618 1
 124C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\data-connect\dist\src\index.node.d.ts134054103134455926 0
+90C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Captura5.ea290a2d.png134160414844630753 0
 116C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\data-connect\dist\src\network134054103134034580 1
 128C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\data-connect\dist\src\tsdoc-metadata.json134054103125247254 0
 126C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\data-connect\dist\src\util\encoder.d.ts134054103131150613 0
@@ -14787,6 +14789,7 @@
 114C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\rn\src\index.d.ts134054103176736892 0
 120C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\rn\src\platform_browser134054103197265714 1
 117C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\rn\src\platform_node134054103176887336 1
+90C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Captura1.4cf829f3.png134160414845285745 0
 155C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\rn\src\platform_react_native\persistence\react_native.d.ts134054103196408060 0
 142C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\browser-cjs\src\core\providers\federated.d.ts134054103163475639 0
 125C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\cordova\src\core\errors.d.ts134054103161178535 0
@@ -15298,6 +15301,7 @@
 133C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\browser-cjs\src\platform_browser\mfa134054103190233843 1
 149C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\browser-cjs\src\platform_browser\popup_redirect.d.ts134054103192305283 0
 139C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\browser-cjs\src\platform_browser\providers134054103190299047 1
+90C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Captura2.0328cca8.png134160414852715758 0
 146C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\browser-cjs\src\platform_browser\util\worker.d.ts134054103213646643 0
 151C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\browser-cjs\src\platform_browser\strategies\phone.d.ts134054103190339161 0
 154C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\node_modules\@firebase\auth\dist\browser-cjs\src\platform_browser\strategies\redirect.d.ts134054103199918960 0
@@ -15555,9 +15559,11 @@
 90C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\images\icons\iconMongo.svg134126652321173184 0
 95C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\images\icons\iconTypeScript.svg134126645950907191 0
 89C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Captura.018e6e9a.PNG134160408457073712 0
+89C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Captura.cf41ed33.png134160414850160731 0
 90C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Captura2.396467a0.PNG134160408458113720 0
 90C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Captura2.79682339.PNG134158756749398664 0
 90C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Captura3.8d9d39cb.PNG134160408458933700 0
+90C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Captura4.8ce6f2a1.png134160414852710745 0
 90C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Captura7.23011de3.png134158756747247016 0
 90C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Captura7.af4a8cf0.png134160408457073712 0
 95C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\fa-brands-400.1bf4a5a8.svg134160408457073712 0
@@ -15583,7 +15589,7 @@
 90C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\iconSass.eed88c83.png134160408458113720 0
 98C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\iconTailwind.svg.451849f2.png134160408458933700 0
 96C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\iconTypeScript.79649139.svg134160408457068709 0
-79C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\index.html134160409601879232 0
+79C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\index.html134160414852715758 0
 89C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\overlay.c3743702.png134158756747287169 0
 106C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Portfolio-Alan-Rosete-1.1.0282b9c3.js134158756748863370 0
 110C:\Users\Alan Rosete\Documents\GitHub\Portfolio-Alan-Rosete-1.1\dist\Portfolio-Alan-Rosete-1.1.0282b9c3.js.map134158756749869301 0
